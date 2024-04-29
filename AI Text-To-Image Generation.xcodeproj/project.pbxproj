@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,9 @@
 		BCC3B8B72BDF916400389C6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC3B8B62BDF916400389C6E /* ContentView.swift */; };
 		BCC3B8B92BDF916500389C6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC3B8B82BDF916500389C6E /* Assets.xcassets */; };
 		BCC3B8BC2BDF916500389C6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC3B8BB2BDF916500389C6E /* Preview Assets.xcassets */; };
+		BCC3B8C42BDF91A300389C6E /* ImageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC3B8C32BDF91A300389C6E /* ImageStyle.swift */; };
+		BCC3B8C72BDF9A5200389C6E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC3B8C62BDF9A5200389C6E /* WelcomeView.swift */; };
+		BCC3B8CA2BDFB09C00389C6E /* GeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC3B8C92BDFB09C00389C6E /* GeneratorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		BCC3B8B62BDF916400389C6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BCC3B8B82BDF916500389C6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCC3B8BB2BDF916500389C6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BCC3B8C32BDF91A300389C6E /* ImageStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStyle.swift; sourceTree = "<group>"; };
+		BCC3B8C62BDF9A5200389C6E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		BCC3B8C92BDFB09C00389C6E /* GeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,10 @@
 		BCC3B8B32BDF916400389C6E /* AI Text-To-Image Generation */ = {
 			isa = PBXGroup;
 			children = (
-				BCC3B8B42BDF916400389C6E /* AI_Text_To_Image_GenerationApp.swift */,
-				BCC3B8B62BDF916400389C6E /* ContentView.swift */,
+				BCC3B8C22BDF917400389C6E /* Root */,
+				BCC3B8C52BDF9A4300389C6E /* Views */,
+				BCC3B8CB2BDFB38F00389C6E /* Models */,
+				BCC3B8C82BDF9F0700389C6E /* Data */,
 				BCC3B8B82BDF916500389C6E /* Assets.xcassets */,
 				BCC3B8BA2BDF916500389C6E /* Preview Content */,
 			);
@@ -65,6 +73,39 @@
 				BCC3B8BB2BDF916500389C6E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BCC3B8C22BDF917400389C6E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				BCC3B8B42BDF916400389C6E /* AI_Text_To_Image_GenerationApp.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		BCC3B8C52BDF9A4300389C6E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCC3B8C62BDF9A5200389C6E /* WelcomeView.swift */,
+				BCC3B8B62BDF916400389C6E /* ContentView.swift */,
+				BCC3B8C92BDFB09C00389C6E /* GeneratorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BCC3B8C82BDF9F0700389C6E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BCC3B8C32BDF91A300389C6E /* ImageStyle.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BCC3B8CB2BDFB38F00389C6E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +124,8 @@
 			dependencies = (
 			);
 			name = "AI Text-To-Image Generation";
+			packageProductDependencies = (
+			);
 			productName = "AI Text-To-Image Generation";
 			productReference = BCC3B8B12BDF916400389C6E /* AI Text-To-Image Generation.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +154,9 @@
 				Base,
 			);
 			mainGroup = BCC3B8A82BDF916400389C6E;
+			packageReferences = (
+				BCC3B8CE2BDFB68800389C6E /* XCLocalSwiftPackageReference "../../../Downloads/Alamofire-master" */,
+			);
 			productRefGroup = BCC3B8B22BDF916400389C6E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +183,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCC3B8C42BDF91A300389C6E /* ImageStyle.swift in Sources */,
 				BCC3B8B72BDF916400389C6E /* ContentView.swift in Sources */,
 				BCC3B8B52BDF916400389C6E /* AI_Text_To_Image_GenerationApp.swift in Sources */,
+				BCC3B8C72BDF9A5200389C6E /* WelcomeView.swift in Sources */,
+				BCC3B8CA2BDFB09C00389C6E /* GeneratorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +393,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		BCC3B8CE2BDFB68800389C6E /* XCLocalSwiftPackageReference "../../../Downloads/Alamofire-master" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../../Downloads/Alamofire-master";
+		};
+/* End XCLocalSwiftPackageReference section */
 	};
 	rootObject = BCC3B8A92BDF916400389C6E /* Project object */;
 }

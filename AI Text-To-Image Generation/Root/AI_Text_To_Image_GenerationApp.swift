@@ -6,7 +6,7 @@ import SwiftUI
 struct AI_Text_To_Image_GenerationApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView()
         }
     }
 }
