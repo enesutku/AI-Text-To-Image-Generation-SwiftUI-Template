@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -155,7 +155,6 @@
 			);
 			mainGroup = BCC3B8A82BDF916400389C6E;
 			packageReferences = (
-				BCC3B8CE2BDFB68800389C6E /* XCLocalSwiftPackageReference "../../../Downloads/Alamofire-master" */,
 			);
 			productRefGroup = BCC3B8B22BDF916400389C6E /* Products */;
 			projectDirPath = "";
@@ -393,13 +392,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCLocalSwiftPackageReference section */
-		BCC3B8CE2BDFB68800389C6E /* XCLocalSwiftPackageReference "../../../Downloads/Alamofire-master" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../../../Downloads/Alamofire-master";
-		};
-/* End XCLocalSwiftPackageReference section */
 	};
 	rootObject = BCC3B8A92BDF916400389C6E /* Project object */;
 }

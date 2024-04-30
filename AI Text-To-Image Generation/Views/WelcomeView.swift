@@ -7,7 +7,7 @@ struct WelcomeView: View {
         NavigationStack {
             VStack {
                 Spacer()
-                Text("Start Creating Your Own Art Now")
+                Text("Start Creating Your Own Art")
                     .font(.system(size: 64, weight: .black))
                     .foregroundStyle(.white)
                 Spacer()
@@ -15,7 +15,7 @@ struct WelcomeView: View {
                     ContentView()
                 } label: {
                     Text("Generate Image")
-                    Image(systemName: "sparkles")
+                    Image(systemName: "sparkle")
                 }
                 .frame(maxWidth: .infinity)
                 .frame(height: 60)
